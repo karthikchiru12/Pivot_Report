@@ -49,5 +49,5 @@ class Pivot:
         Saves the generated pivot file as excel_file
         """
         self.result = self.generate_pivot_table()
-        self.result.to_excel(os.getcwd()+"/"+self.output_file_name+".xlsx")
+        self.result.to_excel(os.getcwd()+"/"+self.output_file_name+".xlsx",index_label=self.row)
         return None
